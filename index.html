@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrançaisOnline - Aprende Francés Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">F</div>
+                <span class="brand-name">FrançaisOnline</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#beneficios" class="nav-link">Beneficios</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="#precios" class="nav-link">Precios</a>
+            </nav>
+            <!-- <button class="btn btn-primary">Clase Gratis</button> -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🇫🇷 Aprende Francés Online</div>
+                <h1 class="hero-title">
+                    Domina el Francés desde
+                    <span class="text-blue">Casa</span>
+                </h1>
+                <p class="hero-description">
+                    Clases personalizadas con profesores nativos. Horarios flexibles, metodología probada y resultados garantizados.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-red btn-lg">
+                        <i class="fas fa-video"></i>
+                        Clase Gratuita
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        <i class="fas fa-calendar"></i>
+                        Ver Horarios
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number text-blue">500+</div>
+                        <div class="stat-label">Estudiantes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number text-red">98%</div>
+                        <div class="stat-label">Satisfacción</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number text-blue">15+</div>
+                        <div class="stat-label">Profesores</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number text-red">24/7</div>
+                        <div class="stat-label">Soporte</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegir nuestras clases?</h2>
+                <p class="section-description">
+                    Metodología probada que te llevará desde principiante hasta avanzado
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-blue">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="benefit-title">Profesores Nativos</h3>
+                    <p class="benefit-description">Aprende con profesores franceses certificados con años de experiencia</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-red">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="benefit-title">Horarios Flexibles</h3>
+                    <p class="benefit-description">Clases disponibles 24/7. Tú decides cuándo y cómo estudiar</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-blue">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="benefit-title">Clases Interactivas</h3>
+                    <p class="benefit-description">Tecnología de última generación para una experiencia inmersiva</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-red">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="benefit-title">Material Incluido</h3>
+                    <p class="benefit-description">Libros digitales, ejercicios y recursos complementarios sin costo extra</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-blue">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="benefit-title">Certificación</h3>
+                    <p class="benefit-description">Obtén certificados reconocidos internacionalmente al completar cada nivel</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon bg-red">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="benefit-title">Práctica Conversacional</h3>
+                    <p class="benefit-description">Sesiones especiales de conversación para mejorar tu fluidez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Cursos</h2>
+                <p class="section-description">
+                    Desde principiante hasta avanzado, tenemos el curso perfecto para ti
+                </p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-badge popular">Más Popular</div>
+                    <div class="course-icon">🌱</div>
+                    <h3 class="course-title">Principiante (A1-A2)</h3>
+                    <p class="course-description">Perfecto para quienes empiezan desde cero</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check-circle"></i> Alfabeto y pronunciación</li>
+                        <li><i class="fas fa-check-circle"></i> Vocabulario básico</li>
+                        <li><i class="fas fa-check-circle"></i> Gramática fundamental</li>
+                        <li><i class="fas fa-check-circle"></i> Conversaciones simples</li>
+                    </ul>
+                    <div class="course-price text-red">$65/mes</div>
+                    <button class="btn btn-red btn-full">Empezar Ahora</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">🚀</div>
+                    <h3 class="course-title">Intermedio (B1-B2)</h3>
+                    <p class="course-description">Para estudiantes con conocimientos básicos</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check-circle"></i> Gramática avanzada</li>
+                        <li><i class="fas fa-check-circle"></i> Expresiones idiomáticas</li>
+                        <li><i class="fas fa-check-circle"></i> Comprensión auditiva</li>
+                        <li><i class="fas fa-check-circle"></i> Escritura estructurada</li>
+                    </ul>
+                    <div class="course-price text-blue">$65/mes</div>
+                    <button class="btn btn-outline-blue btn-full">Empezar Ahora</button>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon">👑</div>
+                    <h3 class="course-title">Avanzado (C1-C2)</h3>
+                    <p class="course-description">Perfecciona tu francés al nivel nativo</p>
+                    <ul class="course-features">
+                        <li><i class="fas fa-check-circle"></i> Francés profesional</li>
+                        <li><i class="fas fa-check-circle"></i> Literatura francesa</li>
+                        <li><i class="fas fa-check-circle"></i> Debates y presentaciones</li>
+                        <li><i class="fas fa-check-circle"></i> Preparación DELF/DALF</li>
+                    </ul>
+                    <div class="course-price text-red">$65/mes</div>
+                    <button class="btn btn-outline-red btn-full">Empezar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+                <p class="section-description">
+                    Miles de estudiantes han logrado sus objetivos con nosotros
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Increíble experiencia. En 6 meses pasé de no saber nada a poder mantener conversaciones fluidas. Los profesores son excelentes."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-blue">M</div>
+                        <div class="author-info">
+                            <div class="author-name">María González</div>
+                            <div class="author-role">Estudiante de Nivel B2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "La flexibilidad de horarios es perfecta para mi trabajo. Puedo estudiar cuando quiero y los profesores siempre están disponibles."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-red">C</div>
+                        <div class="author-info">
+                            <div class="author-name">Carlos Ruiz</div>
+                            <div class="author-role">Profesional</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Conseguí mi certificación DELF B2 gracias a este curso. El material es excelente y la metodología realmente funciona."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar bg-blue">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Ana Martínez</div>
+                            <div class="author-role">Estudiante Universitaria</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <!-- <section id="precios" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planes que se adaptan a ti</h2>
+                <p class="section-description">
+                    Sin compromisos a largo plazo. Cancela cuando quieras.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Plan Básico</h3>
+                    <p class="pricing-description">Perfecto para empezar</p>
+                    <div class="pricing-price">
+                        <span class="price text-blue">$29</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 4 clases grupales/mes</li>
+                        <li><i class="fas fa-check-circle"></i> Material digital incluido</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte por email</li>
+                    </ul>
+                    <button class="btn btn-outline-blue btn-full">Empezar Gratis</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Más Popular</div>
+                    <h3 class="pricing-title">Plan Premium</h3>
+                    <p class="pricing-description">La mejor relación calidad-precio</p>
+                    <div class="pricing-price">
+                        <span class="price text-red">$59</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 8 clases grupales/mes</li>
+                        <li><i class="fas fa-check-circle"></i> 2 clases individuales/mes</li>
+                        <li><i class="fas fa-check-circle"></i> Material premium incluido</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte prioritario</li>
+                    </ul>
+                    <button class="btn btn-red btn-full">Empezar Ahora</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Plan VIP</h3>
+                    <p class="pricing-description">Máxima personalización</p>
+                    <div class="pricing-price">
+                        <span class="price text-blue">$99</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Clases ilimitadas</li>
+                        <li><i class="fas fa-check-circle"></i> 4 clases individuales/mes</li>
+                        <li><i class="fas fa-check-circle"></i> Tutor personal asignado</li>
+                        <li><i class="fas fa-check-circle"></i> Certificación incluida</li>
+                    </ul>
+                    <button class="btn btn-outline-blue btn-full">Contactar</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Tienes preguntas?</h2>
+                <p class="section-description">
+                    Contáctanos y te ayudaremos a encontrar el curso perfecto para ti
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Información de Contacto</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon bg-blue">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@francaisonline.com</p>
+                            <p>soporte@francaisonline.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon bg-red">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 - 20:00</p>
+                            <p>Sábados: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon bg-blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Asesoría Personalizada</h4>
+                            <p>Te ayudamos a elegir el curso ideal</p>
+                            <p>Evaluación gratuita de nivel</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="special-offer">
+                        <h4>🎁 Oferta Especial</h4>
+                        <p>Completa el formulario y recibe un <strong>20% de descuento</strong> en tu primer mes + clase de prueba gratuita</p>
+                    </div> -->
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Solicita Información</h3>
+                        <p class="form-description">
+                            Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas
+                        </p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Nombre *</label>
+                                    <input type="text" id="firstName" name="firstName" required placeholder="Tu nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Apellido *</label>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Tu apellido">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="level">Nivel de Francés Actual</label>
+                                <select id="level" name="level">
+                                    <option value="">Selecciona tu nivel</option>
+                                    <option value="beginner">Principiante (A1-A2)</option>
+                                    <option value="intermediate">Intermedio (B1-B2)</option>
+                                    <option value="advanced">Avanzado (C1-C2)</option>
+                                    <option value="unsure">No estoy seguro/a</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="goals">¿Cuáles son tus objetivos?</label>
+                                <textarea id="goals" name="goals" rows="4" placeholder="Cuéntanos por qué quieres aprender francés y qué esperas lograr..."></textarea>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Quiero recibir consejos gratuitos para aprender francés y ofertas especiales por email</label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">
+                                    Acepto los <a href="#" class="link">términos y condiciones</a> y la <a href="#" class="link">política de privacidad</a> *
+                                </label>
+                            </div>
+
+                            <div class="form-buttons">
+                                <button type="submit" class="btn btn-red btn-full">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar Consulta
+                                </button>
+                                <!-- <button type="button" class="btn btn-outline-blue btn-full">
+                                    <i class="fas fa-video"></i>
+                                    Clase Gratuita
+                                </button> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">¿Listo para empezar tu aventura en francés?</h2>
+            <p class="cta-description">
+                Únete a miles de estudiantes que ya están aprendiendo francés con nosotros. Primera clase completamente gratis.
+            </p>
+            <div class="cta-buttons">
+                <!-- <button class="btn btn-white btn-lg">
+                    <i class="fas fa-video"></i>
+                    Clase Gratuita Ahora
+                </button> -->
+                <button class="btn btn-outline-white btn-lg">
+                    <i class="fas fa-comments"></i>
+                    Hablar con Asesor
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">F</div>
+                        <span class="brand-name">FrançaisOnline</span>
+                    </div>
+                    <p class="footer-description">
+                        La mejor plataforma para aprender francés online con profesores nativos.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Cursos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Principiante</a></li>
+                        <li><a href="#">Intermedio</a></li>
+                        <li><a href="#">Avanzado</a></li>
+                        <li><a href="#">Conversación</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Soporte</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-contact">
+                        <li>📧 info@francaisonline.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>🕒 Lun-Vie 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 FrançaisOnline. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
