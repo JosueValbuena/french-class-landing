@@ -408,6 +408,144 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
+/* Personalized Courses Section */
+.personalized-courses {
+    background-color: white;
+  }
+  
+  .personalized-card {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .personalized-content {
+    border: 2px solid #bfdbfe;
+    background: linear-gradient(135deg, #eff6ff, #fef2f2);
+  }
+  
+  .personalized-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .personalized-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #2563eb, #dc2626);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: white;
+  }
+  
+  .personalized-title {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .personalized-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+  }
+  
+  .personalized-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .personalized-features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .feature-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  
+  .feature-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+  }
+  
+  .feature-content p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .personalized-pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .price-display {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .main-price {
+    font-size: 48px;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 8px;
+  }
+  
+  .price-note {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .pricing-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .includes-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #bfdbfe;
+  }
+  
+  .includes-box h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+  }
+  
+  .includes-box ul {
+    list-style: none;
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  .includes-box li {
+    margin-bottom: 4px;
+  }
+
 /* Testimonials Section */
 .testimonials {
     padding: 5rem 0;
