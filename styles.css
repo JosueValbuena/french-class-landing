@@ -19,16 +19,41 @@ body {
 }
 
 /* Colors */
-.text-blue { color: #2563eb; }
-.text-red { color: #dc2626; }
-.bg-blue { background-color: #dbeafe; color: #2563eb; }
-.bg-red { background-color: #fecaca; color: #dc2626; }
+.text-blue {
+    color: #2563eb;
+}
+
+.text-red {
+    color: #dc2626;
+}
+
+.bg-blue {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.bg-red {
+    background-color: #fecaca;
+    color: #dc2626;
+}
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
+}
+
+/* Commons */
+
+.logo{
+    width: 400rem;
+    height: 100rem;
 }
 
 .section-title {
@@ -48,6 +73,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-header {
     margin-bottom: 4rem;
+}
+
+.courses-white {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.courses-gray {
+    padding: 5rem 0;
+    background-color: #f9fafb;
 }
 
 /* Buttons */
@@ -116,6 +151,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white;
     color: #2563eb;
     border: 2px solid #2563eb;
+    & svg {
+        width: 1.5rem;
+    }
 }
 
 .btn-outline-blue:hover {
@@ -142,6 +180,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white;
     color: #dc2626;
 }
+
+.btn-gradient {
+    background: linear-gradient(135deg, #2563eb, #dc2626);
+    color: white;
+    & svg {
+        width: 1.5rem;
+    }
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #1d4ed8, #b91c1c);
+    transform: translateY(-1px);
+}
+
 
 /* Header */
 .header {
@@ -277,11 +329,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Benefits Section */
-.benefits {
-    padding: 5rem 0;
-    background-color: white;
-}
-
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -324,10 +371,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Courses Section */
-.courses {
-    padding: 5rem 0;
-    background-color: #f9fafb;
-}
 
 .courses-grid {
     display: grid;
@@ -411,24 +454,25 @@ h1, h2, h3, h4, h5, h6 {
 /* Personalized Courses Section */
 .personalized-courses {
     background-color: white;
-  }
-  
-  .personalized-card {
+}
+
+.personalized-card {
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .personalized-content {
+}
+
+.personalized-content {
     border: 2px solid #bfdbfe;
     background: linear-gradient(135deg, #eff6ff, #fef2f2);
-  }
-  
-  .personalized-header {
+    padding: 2rem;
+}
+
+.personalized-header {
     text-align: center;
     margin-bottom: 32px;
-  }
-  
-  .personalized-icon {
+}
+
+.personalized-icon {
     width: 80px;
     height: 80px;
     background: linear-gradient(135deg, #2563eb, #dc2626);
@@ -438,113 +482,122 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     margin: 0 auto 24px;
     color: white;
-  }
-  
-  .personalized-title {
+
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.personalized-title {
     font-size: 24px;
     color: #111827;
     margin-bottom: 8px;
-  }
-  
-  .personalized-subtitle {
+}
+
+.personalized-subtitle {
     font-size: 18px;
     color: #6b7280;
-  }
-  
-  .personalized-body {
+}
+
+.personalized-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-  }
-  
-  .personalized-features {
+}
+
+.personalized-features {
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
-  
-  .feature {
+}
+
+.feature {
     display: flex;
     align-items: flex-start;
     gap: 16px;
-  }
-  
-  .feature-icon {
-    width: 32px;
-    height: 32px;
+}
+
+.feature-icon {
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     margin-top: 4px;
-  }
-  
-  .feature-content h4 {
+
+    & svg {
+        width: 1.5rem;
+    }
+}
+
+.feature-content h4 {
     font-size: 16px;
     font-weight: 600;
     color: #111827;
     margin-bottom: 4px;
-  }
-  
-  .feature-content p {
+}
+
+.feature-content p {
     font-size: 14px;
     color: #6b7280;
-  }
-  
-  .personalized-pricing {
+}
+
+.personalized-pricing {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .price-display {
+}
+
+.price-display {
     text-align: center;
     margin-bottom: 24px;
-  }
-  
-  .main-price {
+}
+
+.main-price {
     font-size: 48px;
     font-weight: 800;
     color: #2563eb;
     margin-bottom: 8px;
-  }
-  
-  .price-note {
+}
+
+.price-note {
     color: #6b7280;
     font-size: 14px;
-  }
-  
-  .pricing-buttons {
+}
+
+.pricing-buttons {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 24px;
-  }
-  
-  .includes-box {
+}
+
+.includes-box {
     background: rgba(255, 255, 255, 0.8);
     padding: 16px;
     border-radius: 8px;
     border: 1px solid #bfdbfe;
-  }
-  
-  .includes-box h5 {
+}
+
+.includes-box h5 {
     font-size: 14px;
     font-weight: 600;
     color: #111827;
     margin-bottom: 8px;
-  }
-  
-  .includes-box ul {
+}
+
+.includes-box ul {
     list-style: none;
     font-size: 12px;
     color: #6b7280;
-  }
-  
-  .includes-box li {
+}
+
+.includes-box li {
     margin-bottom: 4px;
-  }
+}
 
 /* Testimonials Section */
 .testimonials {
@@ -875,6 +928,99 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #22c55e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  }
+  
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .whatsapp-tooltip {
+    position: absolute;
+    right: 64px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #374151;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .whatsapp-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    background-color: #374151;
+  }
+  
+  .whatsapp-btn:hover .whatsapp-tooltip {
+    opacity: 1;
+  }
+  
+  .whatsapp-pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #25d366;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    opacity: 0.2;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+
 /* Footer */
 .footer {
     background-color: #1f2937;
@@ -943,9 +1089,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-bottom {
     border-top: 1px solid #374151;
+    display: flex;
+    justify-content: space-between;
     padding-top: 2rem;
-    text-align: center;
     color: #9ca3af;
+    a {
+        color: #9ca3af;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 }
 
 /* Responsive Design */
@@ -953,54 +1105,54 @@ h1, h2, h3, h4, h5, h6 {
     .nav-menu {
         display: none;
     }
-    
+
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .stats {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hero-buttons .btn {
         width: 100%;
         max-width: 300px;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
     }
-    
+
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
     .form-buttons {
         grid-template-columns: 1fr;
     }
-    
+
     .cta-title {
         font-size: 2rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .cta-buttons .btn {
         width: 100%;
         max-width: 300px;
@@ -1011,11 +1163,11 @@ h1, h2, h3, h4, h5, h6 {
     .container {
         padding: 0 15px;
     }
-    
+
     .hero {
         padding: 3rem 0;
     }
-    
+
     .benefits,
     .courses,
     .testimonials,
@@ -1024,15 +1176,15 @@ h1, h2, h3, h4, h5, h6 {
     .cta {
         padding: 3rem 0;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .stats {
         grid-template-columns: 1fr;
         gap: 1rem;
