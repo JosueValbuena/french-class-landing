@@ -51,9 +51,10 @@ h6 {
 
 /* Commons */
 
-.logo{
-    width: 400rem;
-    height: 100rem;
+.log-main{
+    width: 5rem;
+    background: #bac2ce;
+    border-radius: 10%;
 }
 
 .section-title {
@@ -232,7 +233,7 @@ h6 {
 }
 
 .brand-name {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #1f2937;
 }
