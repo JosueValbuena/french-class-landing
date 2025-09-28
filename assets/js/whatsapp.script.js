@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const sendWhatsapp = () => {
         const nivel = document.getElementById('title-course-beginner');
-        const mensajeOriginal = `Hola, estoy interesado(a) en el curso de ${nivel}.
+        console.log(nivel.textContent)
+        const mensajeOriginal = `Hola, estoy interesado(a) en el curso de ${nivel.textContent}.
 Me gustaría saber cómo puedo inscribirme o si tienen alguna promoción.`;
         const mensajeCodificado = encodeURIComponent(mensajeOriginal);
         const telefono = '+56954972720';
