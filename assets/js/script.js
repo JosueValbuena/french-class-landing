@@ -1,4 +1,4 @@
-import { sendWhatsapp } from "./whatsapp.script";
+import { sendWhatsapp } from "./utils.js";
 
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function () {
@@ -84,15 +84,14 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log({ dataForm: data })
 
             const message = `
-            Hola. Me interesa inscribirme en el curso de frances.
+            Hola, me interesa inscribirme en el curso de francés.
+            Mis datos para la inscripción son:
 
-            Mis datos para inscripcion son:
-
-            Nombre completo: ${data.firstName} ${data.lastName}.
-            Correo: ${data.email}.
-            Telefono: ${data.phone}.
-            Mi nivel actual: ${data.level}.
-            Mis metas: ${data.goals}.
+            - Nombre completo: ${data.firstName} ${data.lastName}.
+            - Correo electrónico: ${data.email}.
+            - Teléfono: ${data.phone}.
+            - Mi nivel actual: ${data.level}.
+            - Mis metas con el idioma: ${data.goals}.
             `
             sendWhatsapp(message);
 

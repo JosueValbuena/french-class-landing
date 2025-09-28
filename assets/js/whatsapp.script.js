@@ -1,9 +1,4 @@
-export const sendWhatsapp = (mensaje) => {
-    const mensajeCodificado = encodeURIComponent(mensaje);
-    const telefono = '+56954972720';
-    const whatsappUrl = `https://wa.me/${telefono}?text=${mensajeCodificado}`;
-    window.open(whatsappUrl, '_blank');
-};
+import { sendWhatsapp } from "./utils.js";
 
 const buildMessage = (title) => {
     const nivel = document.getElementById(title);
