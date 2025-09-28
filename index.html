@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrançaisOnline - Aprende Francés Online</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -161,7 +161,7 @@
                 <div class="course-card">
                     <!-- <div class="course-badge popular">Más Popular</div> -->
                     <div class="course-icon">🌱</div>
-                    <h3 class="course-title">Principiante (A1-A2)</h3>
+                    <h3 class="course-title" id="title-course-beginner">Principiante (A1-A2)</h3>
                     <p class="course-description">Perfecto para principiantes desde cero</p>
                     <ul class="course-features">
                         <li><i class="fas fa-check-circle"></i> Alfabeto y pronunciación</li>
@@ -170,12 +170,12 @@
                         <li><i class="fas fa-check-circle"></i> Conversaciones simples</li>
                     </ul>
                     <div class="course-price text-red">$65/mes</div>
-                    <button class="btn btn-red btn-full">Empezar Ahora</button>
+                    <button id="btn-course-beginner" class="btn btn-outline-red btn-full">Empezar Ahora</button>
                 </div>
 
                 <div class="course-card">
                     <div class="course-icon">🚀</div>
-                    <h3 class="course-title">Intermedio (B1-B2)</h3>
+                    <h3 class="course-title" id="title-course-intermediate">Intermedio (B1-B2)</h3>
                     <p class="course-description">Para personas con conocimientos básicos</p>
                     <ul class="course-features">
                         <li><i class="fas fa-check-circle"></i> Gramática avanzada</li>
@@ -184,12 +184,12 @@
                         <li><i class="fas fa-check-circle"></i> Escritura estructurada</li>
                     </ul>
                     <div class="course-price text-blue">$65/mes</div>
-                    <button class="btn btn-outline-blue btn-full">Empezar Ahora</button>
+                    <button id="btn-course-intermediate" class="btn btn-outline-blue btn-full">Empezar Ahora</button>
                 </div>
 
                 <div class="course-card">
                     <div class="course-icon">👑</div>
-                    <h3 class="course-title">Avanzado (C1-C2)</h3>
+                    <h3 class="course-title" id="title-course-advance">Avanzado (C1-C2)</h3>
                     <p class="course-description">Perfecciona tu francés al nivel nativo</p>
                     <ul class="course-features">
                         <li><i class="fas fa-check-circle"></i> Francés profesional</li>
@@ -198,7 +198,7 @@
                         <li><i class="fas fa-check-circle"></i> Preparación DELF/DALF</li>
                     </ul>
                     <div class="course-price text-red">$65/mes</div>
-                    <button class="btn btn-outline-red btn-full">Empezar Ahora</button>
+                    <button id="btn-course-advance" class="btn btn-outline-red btn-full">Empezar Ahora</button>
                 </div>
             </div>
         </div>
@@ -283,13 +283,6 @@
                                     </svg>
                                     Consulta Gratuita
                                 </button>
-                                <!-- <button class="btn btn-outline-blue btn-full">
-                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                    </svg>
-                                    Consulta Gratuita
-                                </button> -->
                             </div>
 
                             <div class="includes-box">
@@ -318,133 +311,10 @@
             </div>
 
             <div id="testimonials-container" class="testimonials-grid">
-                <!-- <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Increíble experiencia. En 6 meses pasé de no saber nada a poder mantener conversaciones
-                        fluidas. Los profesores son excelentes."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar bg-blue">M</div>
-                        <div class="author-info">
-                            <div class="author-name">María González</div>
-                            <div class="author-role">Estudiante de Nivel B2</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "La flexibilidad de horarios es perfecta para mi trabajo. Puedo estudiar cuando quiero y los
-                        profesores siempre están disponibles."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar bg-red">C</div>
-                        <div class="author-info">
-                            <div class="author-name">Carlos Ruiz</div>
-                            <div class="author-role">Profesional</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Conseguí mi certificación DELF B2 gracias a este curso. El material es excelente y la
-                        metodología realmente funciona."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar bg-blue">A</div>
-                        <div class="author-info">
-                            <div class="author-name">Ana Martínez</div>
-                            <div class="author-role">Estudiante Universitaria</div>
-                        </div>
-                    </div>
-                </div> -->
+                <!-- Render by javascript -->
             </div>
         </div>
     </section>
-
-    <!-- Pricing -->
-    <!-- <section id="precios" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Planes que se adaptan a ti</h2>
-                <p class="section-description">
-                    Sin compromisos a largo plazo. Cancela cuando quieras.
-                </p>
-            </div>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3 class="pricing-title">Plan Básico</h3>
-                    <p class="pricing-description">Perfecto para empezar</p>
-                    <div class="pricing-price">
-                        <span class="price text-blue">$29</span>
-                        <span class="period">/mes</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check-circle"></i> 4 clases grupales/mes</li>
-                        <li><i class="fas fa-check-circle"></i> Material digital incluido</li>
-                        <li><i class="fas fa-check-circle"></i> Soporte por email</li>
-                    </ul>
-                    <button class="btn btn-outline-blue btn-full">Empezar Gratis</button>
-                </div>
-
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Más Popular</div>
-                    <h3 class="pricing-title">Plan Premium</h3>
-                    <p class="pricing-description">La mejor relación calidad-precio</p>
-                    <div class="pricing-price">
-                        <span class="price text-red">$59</span>
-                        <span class="period">/mes</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check-circle"></i> 8 clases grupales/mes</li>
-                        <li><i class="fas fa-check-circle"></i> 2 clases individuales/mes</li>
-                        <li><i class="fas fa-check-circle"></i> Material premium incluido</li>
-                        <li><i class="fas fa-check-circle"></i> Soporte prioritario</li>
-                    </ul>
-                    <button class="btn btn-red btn-full">Empezar Ahora</button>
-                </div>
-
-                <div class="pricing-card">
-                    <h3 class="pricing-title">Plan VIP</h3>
-                    <p class="pricing-description">Máxima personalización</p>
-                    <div class="pricing-price">
-                        <span class="price text-blue">$99</span>
-                        <span class="period">/mes</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check-circle"></i> Clases ilimitadas</li>
-                        <li><i class="fas fa-check-circle"></i> 4 clases individuales/mes</li>
-                        <li><i class="fas fa-check-circle"></i> Tutor personal asignado</li>
-                        <li><i class="fas fa-check-circle"></i> Certificación incluida</li>
-                    </ul>
-                    <button class="btn btn-outline-blue btn-full">Contactar</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Contact Form Section -->
     <section class="contact">
@@ -664,8 +534,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="testimonials-script.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/testimonials.script.js"></script>
+    <script src="./assets/js/whatsapp.script.js"></script>
 </body>
 
 </html>
