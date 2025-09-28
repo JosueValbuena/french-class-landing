@@ -1,11 +1,13 @@
+import { sendWhatsapp } from "./whatsapp.script";
+
 // DOM Content Loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu functionality
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.querySelector('.nav-menu');
-    
+
     if (mobileMenuBtn && navMenu) {
-        mobileMenuBtn.addEventListener('click', function() {
+        mobileMenuBtn.addEventListener('click', function () {
             navMenu.classList.toggle('active');
             const icon = mobileMenuBtn.querySelector('i');
             if (navMenu.classList.contains('active')) {
@@ -21,20 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = targetSection.offsetTop - headerHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-                
+
                 // Close mobile menu if open
                 if (navMenu && navMenu.classList.contains('active')) {
                     navMenu.classList.remove('active');
@@ -49,36 +51,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form data
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData);
-            
+
             // Basic validation
             if (!data.firstName || !data.lastName || !data.email) {
                 showNotification('Por favor, completa todos los campos obligatorios.', 'error');
                 return;
             }
-            
+
             if (!isValidEmail(data.email)) {
                 showNotification('Por favor, ingresa un email válido.', 'error');
                 return;
             }
-            
+
             if (!data.terms) {
                 showNotification('Debes aceptar los términos y condiciones.', 'error');
                 return;
             }
-            
+
             // Simulate form submission
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
-            
+
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
             submitBtn.disabled = true;
-            
+
+            console.log({ dataForm: data })
+
+            const message = `
+            Hola. Me interesa inscribirme en el curso de frances.
+
+            Mis datos para inscripcion son:
+
+            Nombre completo: ${data.firstName} ${data.lastName}.
+            Correo: ${data.email}.
+            Telefono: ${data.phone}.
+            Mi nivel actual: ${data.level}.
+            Mis metas: ${data.goals}.
+            `
+            sendWhatsapp(message);
+
             // Simulate API call
             setTimeout(() => {
                 showNotification('¡Gracias! Hemos recibido tu consulta. Te contactaremos pronto.', 'success');
@@ -92,10 +109,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Button click handlers
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             // Handle specific button actions
             const buttonText = this.textContent.trim();
-            
+
             if (buttonText.includes('Clase Gratis') || buttonText.includes('Clase Gratuita')) {
                 e.preventDefault();
                 showNotification('¡Excelente! Te contactaremos para programar tu clase gratuita.', 'success');
@@ -115,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('loading');
@@ -133,9 +150,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     let lastScrollTop = 0;
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (scrollTop > lastScrollTop && scrollTop > 100) {
             // Scrolling down
             header.style.transform = 'translateY(-100%)';
@@ -143,13 +160,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Scrolling up
             header.style.transform = 'translateY(0)';
         }
-        
+
         lastScrollTop = scrollTop;
     });
 
     // Stats counter animation
     const statsNumbers = document.querySelectorAll('.stat-number');
-    const statsObserver = new IntersectionObserver(function(entries) {
+    const statsObserver = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 animateNumber(entry.target);
@@ -255,9 +272,9 @@ function animateNumber(element) {
             current = target;
             clearInterval(timer);
         }
-        
-        const suffix = element.textContent.includes('%') ? '%' : 
-                      element.textContent.includes('+') ? '+' : '';
+
+        const suffix = element.textContent.includes('%') ? '%' :
+            element.textContent.includes('+') ? '+' : '';
         element.textContent = Math.floor(current) + suffix;
     }, 16);
 }
