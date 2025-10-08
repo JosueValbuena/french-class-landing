@@ -1,8 +1,10 @@
 const testimonialsContainer = document.querySelector('#testimonials-container');
 
+const baseIpV1 = 'https://frances-con-esteban-review-back.onrender.com/api/v1/';
+
 const fetchTestimonials = async () => {
     try {
-        const response = await fetch('http://localhost:3001/api/v1/reviews?status=active', {
+        const response = await fetch(`${baseIpV1}reviews?status=active`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
