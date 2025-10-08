@@ -2,7 +2,7 @@ const testimonialsContainer = document.querySelector('#testimonials-container');
 
 const fetchTestimonials = async () => {
     try {
-        const response = await fetch('http://localhost:3001/api/v1/reviews', {
+        const response = await fetch('http://localhost:3001/api/v1/reviews?status=active', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -11,8 +11,7 @@ const fetchTestimonials = async () => {
         });
         if (!response.ok) return console.log('Error en la solicitud');
         const data = await response.json();
-        console.log({ data });
-        return data.data;
+        return data.data.reviews;
     } catch (error) {
         console.error("Error de conexión:", error);
     };
@@ -26,7 +25,7 @@ const showCardsReviews = async () => {
         return console.log('No hay cards para mostrar');
     };
 
-    reviews.forEach((element) => {
+    reviews.slice(0, 6).forEach((element) => {
         const cardContainer = document.createElement('div');
         const reviewStarBox = document.createElement('div');
         const reviewAuthorName = document.createElement('div');
@@ -56,7 +55,7 @@ const showCardsReviews = async () => {
         reviewAuthorcountry.textContent = element.userCountry;
 
         Array.from({ length: element.reviewRate }).forEach((_) => {
-            reviewStarBox.appendChild(reviewStar.cloneNode(true)); 
+            reviewStarBox.appendChild(reviewStar.cloneNode(true));
         });
 
         reviewAuthorInfoBox.appendChild(reviewAuthorName);
