@@ -186,6 +186,7 @@ h6 {
 .btn-gradient {
     background: linear-gradient(135deg, #2563eb, #dc2626);
     color: white;
+
     & svg {
         width: 1.5rem;
     }
@@ -1161,6 +1162,10 @@ h6 {
     .cta-buttons .btn {
         width: 100%;
         max-width: 300px;
+    }
+
+    .personalized-body {
+        grid-template-columns: 1fr;
     }
 }
 
