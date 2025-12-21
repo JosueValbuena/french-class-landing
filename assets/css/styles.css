@@ -460,7 +460,7 @@ h6 {
 }
 
 .personalized-card {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -560,7 +560,7 @@ h6 {
 }
 
 .main-price {
-    font-size: 48px;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #2563eb;
     margin-bottom: 8px;
@@ -578,11 +578,9 @@ h6 {
     margin-bottom: 24px;
 }
 
-.includes-box {
-    background: rgba(255, 255, 255, 0.8);
+.includes-box {    
     padding: 16px;
     border-radius: 8px;
-    border: 1px solid #bfdbfe;
 }
 
 .includes-box h5 {
